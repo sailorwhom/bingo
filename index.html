@@ -16,10 +16,13 @@
     <p>This site picks a random pdf sheet with four bingo cards and checkboxes for your enjoyment.
         </br>Refreshing will produce a new sheet.
     </p>
+    <p>Note that the pdf will not display on android browser (maybe iphone too?).
+        </br>In that case, you can download it <a id="download" href="">here</a>.
+    </p>
 
 <!--    <img id="img" src="" />-->
 
-    <embed id="sheet" src="" width="800px" height="670px" />
+    <iframe id="sheet" src="" width="800px" height="670px"></iframe>
 
     <p>The bingo and non-bingo content on this site do not reflect the views of my employer.</p>
 
@@ -28,8 +31,9 @@
 <!--        var num = Math.floor(Math.random() * 6) + 1;-->
 <!--        img.src = "images\\image" +  num + ".png";-->
 
-        var n = Math.floor(Math.random() * 50) + 1;
+        var n = Math.floor(Math.random() * 500);
         sheet.src = "\sheets\\fbingo_sheet_" +  n + ".pdf";
+        download.href = "\sheets\\fbingo_sheet_" +  n + ".pdf";
     </script>
 
 </body>
