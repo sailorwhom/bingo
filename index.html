@@ -4,13 +4,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bingo!</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <h1>Bingo Sheets, Hoo-rah</h1>
-    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+    <h1>Gonzales' Bingo Sheet Generator</h1>
+
+    <p><em>"This is the best web 1.0 bingo sheet generator I've ever used."</em> - you, probably</p>
+
+    <p>This site picks a random pdf sheet with four bingo cards and checkboxes for your enjoyment.
+        </br>Refreshing will produce a new sheet.
+    </p>
+
+<!--    <img id="img" src="" />-->
+
+    <embed id="sheet" src="" width="800px" height="670px" />
+
+    <p>The bingo and non-bingo content on this site do not reflect the views of my employer.</p>
+
+
+    <script>
+<!--        var num = Math.floor(Math.random() * 6) + 1;-->
+<!--        img.src = "images\\image" +  num + ".png";-->
+
+        var n = Math.floor(Math.random() * 50) + 1;
+        sheet.src = "\sheets\\fbingo_sheet_" +  n + ".pdf";
+    </script>
+
 </body>
 </html>
